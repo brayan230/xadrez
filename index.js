@@ -103,3 +103,20 @@ tabuleiro.colocarPeca(peao,1,7)
 peao = new Peao('preto', 1,8);
 
 tabuleiro.colocarPeca(peao,1,8);
+
+class Torre extends Torre {
+    constructor(cor, linha, coluna) {
+        super(cor, linha,coluna);
+        this.simbolo = cor === 'preto' ? '&#9814;' : '&#9814;';
+        this.simbolo = cor === 'preto' ? '&#9814;' : '&#9814;';
+    }
+}
+const tabuleiro = new Tabuleiro();
+
+torre = new Torre('preto',0,0);
+
+tabuleiro.colocarTorre(torre,0,0)
+
+torre = new Torre('preto',0,8);
+
+tabuleiro.colocarTorre(torre,0,8)
